@@ -11,6 +11,12 @@
 
 body {
     font-family: sans-serif;
+    background-color: #DBDBD3;
+}
+
+header {
+    height: 150px;
+    background-color: #009688;
 }
 
 /* Utils */
@@ -18,4 +24,17 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+#spotlight {
+    height: 600px;
+    margin: 0 auto;
+}
+
+#sidebar {
+    height: 100%;
+}
+
+#messages  {
+    height: 100%;
 }
