@@ -19,6 +19,15 @@ header {
     background-color: #009688;
 }
 
+img {
+    width: 10%;
+    border-radius: 50%;
+}
+
+p {
+    margin-bottom: 0rem;
+}
+
 /* Utils */
 
 .container {
@@ -29,6 +38,7 @@ header {
 #spotlight {
     height: 600px;
     margin: 0 auto;
+    background-color: white;
 }
 
 #sidebar {
@@ -37,4 +47,12 @@ header {
 
 #messages  {
     height: 100%;
+}
+
+.header.sidebar {
+    height: 100px;
+}
+
+.bi {
+    color: gray;
 }
