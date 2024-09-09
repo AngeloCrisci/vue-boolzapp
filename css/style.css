@@ -59,7 +59,7 @@ ul{
     height: 100%;
 }
 
-.header.sidebar {
+.header-sidebar {
     height: 100px;
 }
 
@@ -78,4 +78,23 @@ ul{
     border-radius: 50%;
     border-style: none;
     font-size: 20px;
+}
+
+#chat-display {
+    overflow-y: visible;
+}
+
+.header-info {
+    height: 100px;
+}
+
+.footer-info {
+   
+}
+
+.body-info {
+    background-image: url(/img/mine.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
 }
