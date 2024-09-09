@@ -20,12 +20,18 @@ header {
 }
 
 img {
-    width: 10%;
+    width: 15%;
     border-radius: 50%;
 }
 
 p {
     margin-bottom: 0rem;
+}
+
+address {
+    margin-bottom: 0;
+    text-decoration: underline;
+    color: gray;
 }
 
 /* Utils */
@@ -53,6 +59,19 @@ p {
     height: 100px;
 }
 
+#notifications {
+    height: 100px;
+    background-color: #8EDAFC;
+}
+
 .bi {
     color: gray;
+}
+
+.bi-bell-slash-fill {
+    background-color: white;
+    color: #8EDAFC;
+    border-radius: 50%;
+    border-style: none;
+    font-size: 20px;
 }
