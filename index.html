@@ -41,6 +41,13 @@
                             <div id="bar-search">
                                 <input class="form-control mt-2" type="text" placeholder="Cerca o inizia una nuova chat">
                             </div>
+                            <div id="chat-display" class="mt-3">
+                                <ul>
+                                    <li v-for="(chat, index) in chatsLog" class="d-flex align-items-center fw-bold" :key="chat.image">
+                                        {{ chat.image }}
+                                    </li>
+                                </ul>
+                            </div>
                         </nav>
                         
                         <div id="messages" class="col-7"></div>
