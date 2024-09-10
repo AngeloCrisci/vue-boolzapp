@@ -70,6 +70,8 @@ ul{
 
 .bi {
     color: gray;
+    font-size: 20px;
+    padding: 10px;
 }
 
 .bi-bell-slash-fill {
@@ -88,8 +90,8 @@ ul{
     height: 100px;
 }
 
-.footer-info {
-   
+.footer-info .bi {
+    padding: 0;
 }
 
 .body-info {
@@ -97,4 +99,26 @@ ul{
     background-repeat: no-repeat;
     background-size: cover;
     height: 650px;
+}
+
+.sent p {
+    background-color: #D5F9BA;
+    padding: 20px;
+    color: black;
+}
+
+.received p {
+    background-color: white;
+    padding: 20px;
+    color: black;
+}
+
+.sent span {
+    font-size: 10px;
+    color: gray;
+}
+
+.received span {
+    font-size: 10px;
+    color: gray;
 }
