@@ -2,16 +2,18 @@ console.log('JS OK')
 
 const { createApp } = Vue;
 
+const DateTime = luxon.DateTime;
+
 createApp({
     data(){
         return {
-            newMessage: [
+            newMessage: 
                 {
-                    date: 'Now',
+                    date: DateTime.now().toString(),
                     message: '',
                     status: 'sent',
-                }
-            ],
+                },
+            
             activeIndex: 0,
             contacts: [
                 {
@@ -184,10 +186,30 @@ createApp({
                 this.activeIndex = index;
             },
 
-            getValue(value){
-                this.newMessage.value = value;
-                contacts.messages.push('newMessage')
+            getValue(){
+               
+                console.log(this.inputMs);
+                this.newMessage.message = this.inputMs;
+                console.dir(this.newMessage);
+                this.contacts[this.activeIndex].messages.push(this.newMessage);
+
+
+setTimeout(()=> {
+    this.contacts[this.activeIndex].messages.push(
+        {
+message:'Ok',
+date: DateTime.now().toString(),
+status:'received'
+    })
+
+
+console.log("passato un secondo");
+
+},1000);
+
                 }
+
+                
             }
             }
 
