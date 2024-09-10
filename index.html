@@ -67,8 +67,7 @@
                                 <div class="body-info">
                                     <div id="messages" class="d-flex-row p-2">
                                         <div v-for="messageChat in contacts[activeIndex].messages" :class="messageChat.status">
-                                            <p class="badge"> {{ messageChat.message }} <span>{{messageChat.date}}</span></p>
-                                            
+                                            <p> {{ messageChat.message }} <span>{{messageChat.date}}</span></p>
                                         </div>
                                     </div>
                                 </div>

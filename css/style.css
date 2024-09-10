@@ -101,16 +101,34 @@ ul{
     height: 650px;
 }
 
+.sent {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.received {
+    display: flex;
+    justify-content: flex-start;
+}
+
 .sent p {
     background-color: #D5F9BA;
-    padding: 20px;
     color: black;
+    max-width: 60%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    word-wrap: break-word;
 }
 
 .received p {
     background-color: white;
     padding: 20px;
     color: black;
+
+    max-width: 60%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    word-wrap: break-word;
 }
 
 .sent span {
