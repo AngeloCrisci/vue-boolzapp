@@ -39,7 +39,7 @@
                                 </div>
                             </div>
                             <div id="bar-search">
-                                <input class="form-control mt-2" type="text" placeholder="Cerca o inizia una nuova chat">
+                                <input v-model="myImput" @keyup.enter="searchForContact" class="form-control mt-2" type="text" placeholder="Cerca o inizia una nuova chat">
                             </div>
                             <div id="chat-display" class="mt-3">
                                 <ul>

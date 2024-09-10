@@ -7,6 +7,7 @@ const DateTime = luxon.DateTime;
 createApp({
     data(){
         return {
+            searchElement: '',
             newMessage: 
                 {
                     date: DateTime.now().toString(),
@@ -207,10 +208,20 @@ console.log("passato un secondo");
 
 },1000);
 
+                },
+
+            searchForContact() {
+                this.searchElement = this.myImput;
+                if(this.contacts.name === this.searchElement){
+                    return this.contacts[activeIndex].name
                 }
+
+                }
+
+            }
 
                 
             }
-            }
+            
 
 ).mount('#app')
